@@ -1,0 +1,174 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Purdue University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/ae0d2d9347.js" crossorigin="anonymous">
+
+    </script>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo3.png" id="aboutImg"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html" style="color:white;">HOME</a></li>
+                    <li><a href="about.html" style="color:white;">ABOUT</a></li>
+                    <li><a href="course.html" style="color:white;">COURSE</a></li>
+                    <li><a href="contact.html" style="color:white;">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>Our Programs</h1>
+    </section>
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>We offer more than 70 areas of study for diploma, undergraduate and graduate students. We’re consistently<br>
+            recognized among the best regional universities in the Times News Report Best Colleges rankings.</p>
+   
+           <div class="row">
+               <div class="course-col">
+                   <h3>Diploma</h3>
+                   <p>Our Diploma courses include Engineering, Nursing, and various other majors. 
+                   They bridge the gap between different phases of academic study, and also provide 
+                   additional professional training and qualifications. Our diploma courses are very industry-focused </p>
+               </div>
+               <div class="course-col">
+                   <h3>Undergraduate</h3>
+                   <p>Undergraduate courses has over 50 major areas of study, and is 
+                   well known for its competitive engineering curriculum. Our programs encourages 
+                   you to ask difficult questions, explore unfamiliar terrain, and indulge your passion for discovery.</p>
+               </div>
+               <div class="course-col">
+                   <h3>Post Graduation</h3>
+                   <p>Purdue's postgraduate courses include Agriculture, Engineering, Health and Human
+                   science, and more. We provide highest level of quality for students through world-class
+                   offerings, top-rated teachers, and excellent resources through hundreds of years.</p>
+               </div>
+        </div>
+    </section>
+    <!-- Blog-page -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg" alt="images">
+                <h2>Our Programs:</h2>
+                <p>Undergraduate courses are typically for students who have completed their high school education and are looking to pursue a bachelor's degree. Some
+                    of our well-known undergraduate courses include:
+                    Bachelor of Arts (BA): This program is typically designed for students who are interested in the humanities, social sciences, or liberal arts. It includes courses in subjects such as history, English, philosophy, political science, and sociology.
+                    Bachelor of Science (BS): This program is typically designed for students who are interested in the natural sciences or mathematics. It includes courses in subjects such as biology, chemistry, physics, mathematics, and computer science.
+                    Bachelor of Business Administration (BBA): This program is typically designed for students who are interested in business or management. It includes courses in subjects such as accounting, finance, marketing, management, and economics.</p>
+                <br>    
+                <p>Postgraduate courses are typically for students who have completed their undergraduate degree and are looking to pursue a higher level of education. Some 
+                    of the best postgraduate courses offered by us include:
+                    Master of Arts (MA): This program is typically designed for students who want to further their studies in the humanities or social sciences. It includes courses in subjects such as history, English, philosophy, political science, and sociology.
+                    Master of Science (MS): This program is typically designed for students who want to further their studies in the natural sciences or mathematics. It includes courses in subjects such as biology, chemistry, physics, mathematics, and computer science.
+                    Master of Business Administration (MBA): This program is typically designed for students who want to further their studies in business or management. It includes courses in subjects such as accounting, finance, marketing, management, and economics.</p>
+                <br>    
+                <p>Diploma courses are typically shorter programs that provide students with specific skills or knowledge in a particular field. Some 
+                 diploma courses offered by universities include: 
+                    Diploma in Accounting: This program is typically designed for students who want to pursue a career in accounting or finance. It includes courses in subjects such as financial accounting, managerial accounting, and taxation.    
+                    Diploma in Information Technology: This program is typically designed for students who want to pursue a career in information technology. It includes courses in subjects such as programming, database management, and web development.
+                    Diploma in Hospitality Management: This program is typically designed for students who want to pursue a career in the hospitality industry. It includes courses in subjects such as hotel and restaurant management, event planning, and tourism.</p>
+                <br>
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+                    <form action="#" class="comment-form">
+                        <input type="text" id="name" placeholder="Enter Name" required>
+                        <input type="email" id="email" placeholder="Enter Email" required>
+                        <textarea rows="5" id="message" required></textarea>
+                        <button type="submit" onclick="comment()" class="hero-btn red-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+            <div>
+                <span>Engineering</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Technology</span>
+                <span>10</span>
+            </div>
+            <div>
+                <span>Nursing</span>
+                <span>10</span>
+            </div>
+            <div>
+                <span>Agriculture</span>
+                <span>17</span>
+            </div>
+            <div>
+                <span>Commerce</span>
+                <span>31</span>
+            </div>
+            <div>
+                <span>Health and Human Science</span>
+                <span>13</span>
+            </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function comment(){
+            un=/^[A-z]+$/;
+            em=/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            name=document.getElementById("name").value;
+            email=document.getElementById("email").value;
+            mes=document.getElementById("message").value;
+            if(!(un.test(name))){
+                alert("Enter valid name");
+            }
+            else if(!(em.test(email)))
+            {
+                alert("Enter valid email");
+            }
+            else if(mes==""){
+                alert("Enter your query");
+            }
+            else{
+                alert("Query sent successfully");
+            }
+        }
+    </script>
+    <!------footer------->
+    <section class="footer">
+        <h1>Our Courses</h1>
+        <p>We offer more than 70 areas of study for diploma, undergraduate and graduate students. We’re consistently<br>
+        recognized among the best regional universities in the Times News Report Best Colleges rankings.</p>
+        <div class="icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+           <a href="#"><i class="fa-brands fa-twitter"></i></a>
+           <a href="#"><i class="fa-brands fa-instagram"></i></a>
+           <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </section>
+
+    <!----javascript for toggle menu-->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

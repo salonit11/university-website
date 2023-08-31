@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Purdue University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/ae0d2d9347.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo3.png" id="aboutImg"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html" style="color:white;">HOME</a></li>
+                    <li><a href="about.html" style="color:wheat;">ABOUT</a></li>
+                    <li><a href="course.html" style="color:white;">COURSE</a></li>
+                    <li><a href="contact.html" style="color:white;">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are one of the World's Top University</h1>
+                <p>Purdue University (or simply Purdue) is a public land-grant research university in Ahmedabad, Gujarat, 
+                and the flagship campus of the Purdue University system. The university was founded in 1869 after Gujarati 
+                businessman John Purdue donated land and money to establish a college of science, technology, and agriculture
+                in his name. The first classes were held on September 16, 1874, with six instructors and 39 students.
+                It has been ranked as among the best public universities in Inida by major institutional rankings, and is 
+                renowned for its engineering program.</p>
+                <a href="contact.html" class="hero-btn red-btn">Visit Us</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about2.jpg" alt="images">
+            </div>
+        </div>
+
+    </section>
+    <!------footer------->
+    <section class="footer">
+        <h1>About Us</h1>
+        <p>Diverse, hardworking, and innovative, we’re where academic excellence meets real-world experience.<br>
+        At PU, students from next door and students from halfway across the world come together to learn, grow, and connect.</p>
+        <div class="icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+           <a href="#"><i class="fa-brands fa-twitter"></i></a>
+           <a href="#"><i class="fa-brands fa-instagram"></i></a>
+           <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </section>
+
+    <!----javascript for toggle menu-->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

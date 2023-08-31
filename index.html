@@ -1,0 +1,153 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Purdue University</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/ae0d2d9347.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo3.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>World's biggest University</h1>
+            <p>Welcome to our university website, where we offer a diverse range of academic 
+            programs<br> and a dynamic learning environment to help students achieve their academic and professional goals.</p>
+            <a href="contact.html" class="hero-btn">Visit us to know more</a>
+        </div>
+    </section>
+    <!--------course-->
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>We offer more than 70 areas of study for diploma, undergraduate and graduate students. We're consistently<br>
+            recognized among the best regional universities in the Times News Report Best Colleges rankings.</p>
+   
+           <div class="row">
+               <div class="course-col">
+                   <h3>Diploma</h3>
+                   <p>Our Diploma courses include Engineering, Nursing, and various other majors. 
+                   They bridge the gap between different phases of academic study, and also provide 
+                   additional professional training and qualifications. Our diploma courses are very industry-focused </p>
+               </div>
+               <div class="course-col">
+                   <h3>Undergraduate</h3>
+                   <p>Undergraduate courses has over 50 major areas of study, and is 
+                   well known for its competitive engineering curriculum. Our programs encourages 
+                   you to ask difficult questions, explore unfamiliar terrain, and indulge your passion for discovery.</p>
+               </div>
+               <div class="course-col">
+                   <h3>Post Graduation</h3>
+                   <p>Purdue's postgraduate courses include Agriculture, Engineering, Health and Human
+                   science, and more. We provide highest level of quality for students through world-class
+                   offerings, top-rated teachers, and excellent resources through hundreds of years.</p>
+            </div>
+        </div>
+    </section>
+    <!---------campus-------->
+
+    <section class="campus">
+        <h1>Our Regional Campus</h1>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/london.png">
+                <div class="layer">
+                    <h3>AHMEDABAD</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/newyork.png">
+                <div class="layer">
+                    <h3>VADODARA</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/washington.png">
+                <div class="layer">
+                    <h3>SURAT</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!------------facilities------------->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.png">
+                <h3>World Class Library</h3>
+                <p>It has a collection of about 18 lakh books in Hindi, English, 
+                Urdu, Punjabi & other Indian Languages- almost all subjects are represented in its collection</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/basketball.png">
+                <h3>Largest Play Ground</h3>
+                <p>The institute boasts of a well-maintained ground with lush green 
+                outfield which is used for Cricket, Football, Hockey, Handball, Athletics</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.png">
+                <h3>Tasty and Healthy Food</h3>
+                <p>From personalized salads to Asian cuisine, pizzas and deli sandwiches, 
+                the dining facility provides a variety of meals for students to choose from each day.</p>
+            </div>
+        </div>
+    </section>
+    <!--------call to action-->
+
+    <section class="cta">
+        <h1>Enroll For Our Various Courses<br> Anywhere From The World</h1>
+        <a href="course.html" class="hero-btn">KNOW MORE</a>
+
+
+
+    </section>
+
+    <!------footer------->
+    <section class="footer">
+        <h1>About Us</h1>
+        <p>Diverse, hardworking, and innovative, we’re where academic excellence meets real-world experience.<br>
+            At PU, students from next door and students from halfway across the world come together to learn, grow, and connect.</p>
+        <div class="icons">
+           <a href="#"><i class="fa-brands fa-facebook"></i></a>
+           <a href="#"><i class="fa-brands fa-twitter"></i></a>
+           <a href="#"><i class="fa-brands fa-instagram"></i></a>
+           <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </section>
+    <!----javascript for toggle menu-->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
